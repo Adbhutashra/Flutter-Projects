@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>flutter_notification_test</title>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-messaging.js"></script>
+</head>
+
+<body>
+
+<script>
+<!--Update with yours config-->
+const firebaseConfig = {
+    apiKey: "AIzaSyAgs4HJI0wEjZ0KXrwEgX7hCLnkAMH-yjc",
+    authDomain: "flutterdemo-f8a65.firebaseapp.com",
+    databaseURL: "https://flutterdemo-f8a65-default-rtdb.firebaseio.com",
+    projectId: "flutterdemo-f8a65",
+    storageBucket: "flutterdemo-f8a65.appspot.com",
+    messagingSenderId: "280530107675",
+    appId: "1:280530107675:web:29b963310fadf4bf6ee7be",
+    measurementId: "G-60G1RJNRB9"
+  };
+  firebase.initializeApp(firebaseConfig);
+  </script>
+<script src="main.dart.js" type="application/javascript"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("/firebase-messaging-sw.js");
+      });
+    }
+    </script>
+</body>
+</html>

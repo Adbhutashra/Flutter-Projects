@@ -1,0 +1,12 @@
+{
+    "workbench.editor.limit.enabled": true,
+    "editor.formatOnSave": true,
+    "cSpell.ignoreWords": ["address", "data", "detail", "property"],
+    "[Default Dark+]": {
+      "dart.closingLabels": "#335566"
+    },
+    "files.autoSave": "afterDelay",
+    "java.configuration.updateBuildConfiguration": "interactive"
+    // "dart.flutterSdkPath": "/Users/geitpl/Desktop/flutter/flutter"
+  }
+  
